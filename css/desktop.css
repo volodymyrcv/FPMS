@@ -1,0 +1,57 @@
+body{
+    width:900px;
+    line-height:18pt;}
+body>header {
+    width:900px;}
+h2{
+    font-size:22pt;}
+#information img {
+    filter:drop-shadow(10px 10px 50px yellow);
+    -webkit-filter:drop-shadow(5px 10px 30px yellow);
+    height:210px;
+    padding:25px;
+    float:left;
+    transition:transform 5s;
+    transition:-ms-transform 5s;
+    -moz-transition:-moz-transform 5s;
+    -o-transition:-o-transform 5s;
+    -webkit-transition:-webkit-transform 5s;}
+#information img:hover {
+    transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);}
+#information p {
+    padding:15px;}
+/* portfolio */
+#portfolio div{
+    height:195px;}
+#run {
+    left:13px}
+.project {
+    height:175px;
+    margin:0 39px;}
+/* contacts */
+form label>input, textarea{
+    transition:transform 1s;
+    transition:-ms-transform 1s;
+    -moz-transition:-moz-transform 1s;
+    -o-transition:-o-transform 1s;
+    -webkit-transition:-webkit-transform 1s;width:45%;}
+select {
+    font-size:13pt;
+    transition:transform 1s;
+    transition:-ms-transform 1s;
+    -moz-transition:-moz-transform 1s;
+    -o-transition:-o-transform 1s;
+    -webkit-transition:-webkit-transform 1s;}
+form label>input:focus,select:focus,textarea:focus{
+    transform:scale(1.5);
+    -moz-transform:scale(1.5);
+    -ms-transform:scale(1.5);
+    -o-transform:scale(1.5);
+    -webkit-transform:scale(1.5);
+    z-index:1}
+.button {
+    width:200px;}

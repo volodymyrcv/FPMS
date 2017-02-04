@@ -1,0 +1,23 @@
+body{
+    line-height:16pt;
+    padding:10px;
+    width:360px;}
+body>header{
+    width:360px;}
+h2{
+    font-size:18pt;}
+#information img{
+    display:none;}
+/* portfolio */
+#portfolio div{
+    height:150px;}
+#run {
+    left:27px}
+.project{
+    height:140px;
+    margin:0 34px;}
+/* contacts */
+input,textarea {
+    width:95%;}
+select {
+    font-size:13pt}

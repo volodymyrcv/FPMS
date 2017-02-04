@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <title>Фінальний проект</title>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Серебрянський Володимир">
+    <meta name="viewport" content="width:device-width, initial-scale=1">
+    <link rel="icon" href="img/small_icon.png" sizes="16x16">
+    <link rel="icon" href="img/large_icon.png" sizes="32x32">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="css/mobile.css">
+    <link rel="stylesheet" media="(min-width:500px) and (max-width:900px)" href="css/medium.css">
+    <link rel="stylesheet" media="(min-width:900px)" href="css/desktop.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#information">Про мене</a>
+            <a href="#portfolio">Портфоліо</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
+    </header>
+    <section id="information">
+        <header>
+            <h2>Серебрянський Володимир</h2>
+        </header>
+        <div>
+            <img src="img/head.png" alt="Автор сайту">
+            <p>До вашої уваги пропонується персональна веб-сторінка учня 220 групи курсу
+                <span>HTML/CSS/JavaScript Fundamentals</span> від компанії
+                <span><i>Soft Serve</i></span> - Серебрянського Володимира
+            </p>
+            <h4>Загальна інформація:</h4>
+            <ul>
+                <li>Народився в м.Чернівці</li>
+                <li>Закінчив університет за спеціальністю "Інформатика"</li>
+                <li>Заочною формою навчання здобув рівень освіти - "Бакалавр"</li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <section id="portfolio">
+        <header>
+            <h1>Портфоліо</h1>
+        </header>
+        <div>
+            <img src="img/left.png" class="controls" alt="Попередній проект">
+            <div>
+                <ol id="run">
+                    <li><a href="https://ninjamock.com/s/5RVDH" target="_blank" tabindex="-1"><img src="img/portfolio/mockup_mysite_desktop.png" id="mockUp" alt="Макет цього сайту" title="MockUp" class="project"></a></li>
+                    <li><a href="https://volodymyrcv.github.io/HCJ_SS/" target="_blank" tabindex="-1"><img src="img/portfolio/html_some_tags.png" alt="Сторінка 2 заняття: HTML теґи" title="HTML теґи" class="project"></a></li>
+                    <li><a href="https://volodymyrcv.github.io/SS_kourse/" target="_blank" tabindex="-1"><img src="img/portfolio/html_forms.png" alt="Сайт 3 заняття: HTML форми і таблиці" title="HTML форми" class="project"></a></li>
+                    <li><a href="https://volodymyrcv.github.io/JS/quadequation.html" target="_blank" tabindex="-1"><img src="img/portfolio/quadratic_equation.png" alt="Сайт 6 заняття: Квадратне рівняння" title="Квадратне рівняння JavaScript_1" class="project"></a></li>
+                    <li><a href="https://volodymyrcv.github.io/JS/fibonacci.html" target="_blank" tabindex="-1"><img src="img/portfolio/fibonacci.png" alt="Сайт 7 заняття: Число Фібоначі" title="Число Фібоначі JavaScript_2" class="project"></a></li>
+                </ol>
+            </div>
+            <img src="img/right.png" class="controls" alt="Наступний проект">
+        </div>
+    </section>
+    <hr>
+    <footer id="contacts">
+        <h3>Контакти</h3>
+        <p>Місто <strong>Чернівці</strong>
+            <br>
+            Мобільний телефон: <strong>(012) 345 67 89</strong>
+        </p>
+        <form>
+            <label><b>Електронна пошта:</b>
+                <br>
+                <input type="email" name="email" minlength="5" placeholder="my@post.ua" id="eMail" required>
+            </label>
+            <br>
+            <label><b>Номер телефону:</b>
+                <br>
+                <input type="tel" name="telephone" id="telePhone" pattern="\(\d{3}\)\s\d{3}\s\d{2}\s\d{2}" placeholder="(987) 654 32 10" title="(987) 654 32 10">
+            </label>
+            <br>
+            <label><strong>Ім'я:</strong>
+                <br>
+                <input minlength="2" name="fName" id="fName" placeholder="Ваше ім'я" required>
+            </label>
+            <br>
+            <label for="theme"><strong>Тема</strong></label>
+            <br>
+            <select name="theme" id="theme">
+                <option value="quest" selected>Питання</option>
+                <option value="prop">Пропозиція</option>
+                <option value="critic">Відгук</option>
+            </select>
+            <br>
+            <label><strong>Відгук:</strong>
+                <br>
+                <textarea name="comment" id="comment" cols="60" rows="5" required placeholder="Коментар"></textarea>
+            </label>
+            <br>
+            <input type="Submit" class="button" id="submit">
+            <input type="reset" class="button" id="reset">
+        </form>
+        <hr>
+        <br>
+        <label>Заповнити форму за допомогою JSON
+            <br>
+            <input type="checkbox" id="autoComplete">
+        </label>
+        <h3><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fvolodymyrcv.github.io%2FFP%2F" target="_blank">Валідатор</a></h3>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/a.js"></script>
+    </body>
+</html>
