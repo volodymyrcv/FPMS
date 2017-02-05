@@ -8,16 +8,16 @@
     <link rel="icon" href="img/small_icon.png" sizes="16x16">
     <link rel="icon" href="img/large_icon.png" sizes="32x32">
     <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" media="(max-width:500px)" href="css/mobile.css">
-    <link rel="stylesheet" media="(min-width:500px) and (max-width:900px)" href="css/medium.css">
+    <link rel="stylesheet" media="(max-width:499px)" href="css/mobile.css">
+    <link rel="stylesheet" media="(min-width:500px) and (max-width:899px)" href="css/medium.css">
     <link rel="stylesheet" media="(min-width:900px)" href="css/desktop.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="#information">Про мене</a>
-            <a href="#portfolio">Портфоліо</a>
-            <a href="#contacts">Контакти</a>
+            <span id="toInformation" onclick="timer(0)">Про мене</span>
+            <span id="toPortfolio" onclick="timer(1)">Портфоліо</span>
+            <span id="toContacts" onclick="timer(2)">Контакти</span>
         </nav>
     </header>
     <section id="information">
@@ -44,7 +44,7 @@
             <h1>Портфоліо</h1>
         </header>
         <div>
-            <img src="img/left.png" class="controls" alt="Попередній проект">
+            <img src="img/left.png" class="controls" alt="Попередній проект" id="leftRun"></button>
             <div>
                 <ol id="run">
                     <li><a href="https://ninjamock.com/s/5RVDH" target="_blank" tabindex="-1"><img src="img/portfolio/mockup_mysite_desktop.png" id="mockUp" alt="Макет цього сайту" title="MockUp" class="project"></a></li>
@@ -54,7 +54,7 @@
                     <li><a href="https://volodymyrcv.github.io/JS/fibonacci.html" target="_blank" tabindex="-1"><img src="img/portfolio/fibonacci.png" alt="Сайт 7 заняття: Число Фібоначі" title="Число Фібоначі JavaScript_2" class="project"></a></li>
                 </ol>
             </div>
-            <img src="img/right.png" class="controls" alt="Наступний проект">
+            <img src="img/right.png" class="controls" alt="Наступний проект" id="rightRun">
         </div>
     </section>
     <hr>

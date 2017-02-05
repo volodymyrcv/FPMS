@@ -1,6 +1,7 @@
 submit.addEventListener('click',
     function(e){
-        ajax("POST", e);
+        e.preventDefault();
+        ajax("POST");
     });
 reset.addEventListener('click',
     function(){
@@ -20,7 +21,7 @@ autoComplete.addEventListener('change',
            comment.value = "";
            submit.style.borderColor="lightgray";
         }});
-function ajax(method, e=undefined) {
+function ajax(method) {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
@@ -32,7 +33,7 @@ function ajax(method, e=undefined) {
                 theme.value = formData.theme;
                 comment.value = formData.comment;
             } else {
-                e.preventDefault();
+                alert(xhr.responseText);
             }
             submit.style.borderColor="green";
         } else {
@@ -44,7 +45,7 @@ function ajax(method, e=undefined) {
         xhr.send();
     } else {
         xhr.open('POST', 'https://formspree.io/gameundercover@bk.ru', true);
-        xhr.setRequestHeader('Content-type', 'text/x-json');
-        xhr.send('email='+eMail.value+'&telephone='+telePhone.value+'&name='+fName+'&theme='+theme.value+'&comment='+comment.value);
+        xhr.setRequestHeader('Accept', 'application/json');
+        xhr.send('email:'+eMail.value+',telephone:'+telePhone.value+',name:'+fName+',theme:'+theme.value+',comment:'+comment.value);
     }
 }

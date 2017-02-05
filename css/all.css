@@ -6,7 +6,8 @@ body{
     text-align:justify;}
 body>header{
     background-color:white;
-    margin:0 auto;position:fixed;
+    margin:0 auto;
+    position:fixed;
     top:0;
     Z-index:1;}
 h1, h2, h3{
@@ -15,19 +16,14 @@ h1, h2, h3{
 header>nav{
     display:flex;flex-flow:row nowrap;
     justify-content:space-between;}
-nav a{
+nav span{
+    color:blue;
     transition:text-shadow 1s;}
-nav a:hover{
+nav span:hover{
     text-shadow:1px 1px red;}
-nav a:firstChild{
+nav span:firstChild{
     font-weight:bold;
     text-decoration:underline;}
-nav a:visited, nav a:link{
-    color:blue;
-    font-size:16pt;
-    text-decoration:none;}
-nav a:focus {
-    text-transform:uppercase;}
 /* #information */
 #information p{
     text-indent:10pt;}
@@ -53,8 +49,21 @@ hr{
     width:50px;
     cursor:pointer;}
 #run{
-    left:0px;
-    position:relative;}
+    overflow-x:scroll;
+    overflow-y: hidden;
+    }
+#run::scrollbar {
+    display:none;
+}
+#run::moz-scrollbar {
+    display:none;
+}
+#run::o-scrollbar {
+    display:none;
+}
+#run::-webkit-scrollbar {
+    display:none;
+}
 #run li {
     display:inline;}
 .project{
