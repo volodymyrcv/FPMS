@@ -37,8 +37,8 @@ function animate(out, to, positionProject){
             top = contacts.offsetTop;
         break;
         case 3:
-            if (leftPos-1 >= 0){
-                run.scrollLeft -= (project[leftPos].width-project[leftPos-1].width)/out;
+            if (positionProject-1 >= 0){
+                run.scrollLeft -= (project[positionProject].width-project[positionProject-1].width)/out;
                 positionProject--;
             }
         break;
