@@ -46,6 +46,6 @@ function ajax(method) {
     } else {
         xhr.open('POST', 'https://formspree.io/gameundercover@bk.ru', true);
         xhr.setRequestHeader('Accept', 'application/json');
-        xhr.send('email:'+eMail.value+',telephone:'+telePhone.value+',name:'+fName+',theme:'+theme.value+',comment:'+comment.value);
+        xhr.send('electronical:'+eMail.value.split('@')[0]+'edomain'+eMail.value.split('@')[1]+',telephone:'+telePhone.value+',name:'+fName+',theme:'+theme.value+',comment:'+comment.value);
     }
 }

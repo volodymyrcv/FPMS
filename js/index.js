@@ -26,15 +26,16 @@ function timer(to){
 
 function animate(out, to, positionProject){
     var top, size = window.innerWidth, project = document.getElementsByClassName('project');
+    var head = document.getElementsByTagName('header')[0].clientHeight;
     switch(to){
         case 0:
-           top = information.offsetTop;
+           top = information.offsetTop-head;
         break;
         case 1:
-            top = portfolio.offsetTop;
+            top = portfolio.offsetTop-head;
         break;
         case 2:
-            top = contacts.offsetTop;
+            top = contacts.offsetTop-head;
         break;
         case 3:
             if (positionProject-1 >= 0){
