@@ -18,6 +18,7 @@ header>nav{
     justify-content:space-between;}
 nav span{
     color:blue;
+    cursor:pointer;
     transition:text-shadow 1s;}
 nav span:hover{
     text-shadow:1px 1px red;}
